@@ -7,6 +7,12 @@ nav img {
   width: 100px;
 }
 
+.content {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
