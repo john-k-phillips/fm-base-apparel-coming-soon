@@ -28,6 +28,11 @@ nav img {
 @media screen and (min-width: 1440px) {
   .desktop-hero {
     display: block;
+    height: 100vh;
+    max-width: 600px;
+  }
+  .desktop-hero img {
+    height: 100%;
   }
   .mobile-hero {
     display: none;

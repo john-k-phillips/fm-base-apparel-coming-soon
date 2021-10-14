@@ -22,6 +22,11 @@ nav {
 @media screen and (min-width: 1440px) {
     .desktop-hero {
         display: block;
+        height: 100vh;
+        max-width: 600px;
+        img {
+            height: 100%;
+        }
     }
     
     .mobile-hero {
