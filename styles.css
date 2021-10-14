@@ -246,6 +246,8 @@ body {
   body {
     margin-bottom: 0;
     background: url(images/bg-pattern-desktop.svg) no-repeat;
+    background-position: bottom left;
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=styles.css.map */
