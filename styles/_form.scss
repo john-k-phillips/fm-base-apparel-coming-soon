@@ -10,6 +10,7 @@ form {
 
         border: none;
         outline: none;
+        background-color: transparent;
 
         border-radius: 2em;
         border: 1px solid $clr-d-red;
@@ -19,7 +20,9 @@ form {
         font-weight: 600;
         &::placeholder {
             color: $clr-d-red;
-            opacity: 75%;
+            opacity: 50%;
+            font-size: 1.2em;
+            font-weight: 300;
         }
         &:invalid {
             border-color: $clr-soft-red;
@@ -68,4 +71,25 @@ form {
     .error {
         display: none;
     }
+}
+
+@media screen and (min-width: 1440px) {
+    form {
+        margin-left: 0;
+        input {
+              padding: 1.5em;
+              padding-left: 2em;        
+        }
+        .arrow-container {
+            width: 100px;
+        }
+        .error-container {
+            position: absolute;
+            right: 120px;
+            height: 100%;
+            display: grid;
+            place-items: center;
+        }
+    }
+    
 }

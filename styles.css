@@ -45,6 +45,9 @@ nav img {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
+  nav {
+    margin-left: 1em;
+  }
   nav img {
     width: auto;
   }
@@ -82,6 +85,21 @@ nav img {
   font-size: 0.9em;
 }
 
+@media screen and (min-width: 1440px) {
+  .content {
+    text-align: left;
+  }
+  .content h1 {
+    font-size: 4em;
+  }
+  .content p {
+    margin-left: 0;
+    max-width: 500px;
+    font-size: 1.1em;
+    margin-bottom: 3em;
+  }
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,6 +114,7 @@ form input {
   width: 100%;
   border: none;
   outline: none;
+  background-color: transparent;
   border-radius: 2em;
   border: 1px solid #ce9797;
   padding-left: 2em;
@@ -105,22 +124,30 @@ form input {
 
 form input::-webkit-input-placeholder {
   color: #ce9797;
-  opacity: 75%;
+  opacity: 50%;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 form input:-ms-input-placeholder {
   color: #ce9797;
-  opacity: 75%;
+  opacity: 50%;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 form input::-ms-input-placeholder {
   color: #ce9797;
-  opacity: 75%;
+  opacity: 50%;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 form input::placeholder {
   color: #ce9797;
-  opacity: 75%;
+  opacity: 50%;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 form input:invalid {
@@ -173,6 +200,27 @@ form span {
 
 form .error {
   display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  form {
+    margin-left: 0;
+  }
+  form input {
+    padding: 1.5em;
+    padding-left: 2em;
+  }
+  form .arrow-container {
+    width: 100px;
+  }
+  form .error-container {
+    position: absolute;
+    right: 120px;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
 }
 
 *, *::after, *::before {
