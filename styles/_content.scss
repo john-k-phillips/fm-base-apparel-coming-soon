@@ -2,5 +2,22 @@
     margin: auto;
 
     text-align: center;
-    width: 80%;
+    width: 85%;
+    h1 {
+        text-transform: uppercase;
+        font-size: 2.5em;
+        letter-spacing: 0.3em;
+        margin-top: 8vh;
+        color: $clr-dark-grayish-red;
+        span {
+            color: $clr-d-red;
+            font-weight: 300;
+        }
+    }
+    p {
+        color: $clr-d-red;
+        font-size: 0.9em;
+        margin-top: 1em;
+        line-height: 1.3em;
+    }
 }

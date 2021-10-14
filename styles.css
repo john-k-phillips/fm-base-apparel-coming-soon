@@ -10,7 +10,27 @@ nav img {
 .content {
   margin: auto;
   text-align: center;
-  width: 80%;
+  width: 85%;
+}
+
+.content h1 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 0.3em;
+  margin-top: 8vh;
+  color: #413a3a;
+}
+
+.content h1 span {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.content p {
+  color: #ce9797;
+  font-size: 0.9em;
+  margin-top: 1em;
+  line-height: 1.3em;
 }
 
 *, *::after, *::before {
