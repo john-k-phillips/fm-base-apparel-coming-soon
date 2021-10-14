@@ -14,15 +14,28 @@ form {
         border-radius: 2em;
         border: 1px solid $clr-d-red;
         padding-left: 2em;
+
+        color: $clr-dark-grayish-red;
+        font-weight: 600;
         &::placeholder {
             color: $clr-d-red;
             opacity: 75%;
         }
+        &:invalid {
+            border-color: $clr-soft-red;
+            border-width: 2px;
+        }
+        &:invalid ~ .error {
+            display: flex;
+        }
     }
-    div {
+    .arrow-container {
         background: $grad-pink;
 
         border-radius: 2em;
+        border: none;
+        outline: none;
+        cursor: pointer;
 
         position: absolute;
         right: 0px;
@@ -32,5 +45,28 @@ form {
 
         display: grid;
         place-items: center;
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+
+    // ERROR CONTROL
+    .error-container {
+        position: absolute;
+        right: 80px;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    span {
+        position: absolute;
+        bottom: -25px;
+        left: 25px;
+        font-size: 0.9em;
+        color: $clr-soft-red;
+    }
+    .error {
+        // CHANGE TO FLEX
+        display: none;
     }
 }
