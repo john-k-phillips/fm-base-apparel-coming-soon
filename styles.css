@@ -29,10 +29,11 @@ nav img {
   .desktop-hero {
     display: block;
     height: 100vh;
-    max-width: 600px;
   }
   .desktop-hero img {
     height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .mobile-hero {
     display: none;
