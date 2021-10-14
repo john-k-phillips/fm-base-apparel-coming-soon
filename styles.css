@@ -53,6 +53,57 @@ nav img {
   font-size: 0.9em;
 }
 
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: auto;
+  max-width: 500px;
+}
+
+form input {
+  padding: 1.2em 1em;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 2em;
+  border: 1px solid #ce9797;
+  padding-left: 2em;
+}
+
+form input::-webkit-input-placeholder {
+  color: #ce9797;
+  opacity: 75%;
+}
+
+form input:-ms-input-placeholder {
+  color: #ce9797;
+  opacity: 75%;
+}
+
+form input::-ms-input-placeholder {
+  color: #ce9797;
+  opacity: 75%;
+}
+
+form input::placeholder {
+  color: #ce9797;
+  opacity: 75%;
+}
+
+form div {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border-radius: 2em;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 65px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -66,5 +117,6 @@ body {
   background: linear-gradient(135deg, white, #fafafa);
   width: 100%;
   height: 100vh;
+  margin-bottom: 4em;
 }
 /*# sourceMappingURL=styles.css.map */

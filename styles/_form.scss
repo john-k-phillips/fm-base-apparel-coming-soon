@@ -1,0 +1,36 @@
+form {
+    display: flex;
+    position: relative;
+
+    margin: auto;
+    max-width: 500px;
+    input {
+        padding: 1.2em 1em;
+        width: 100%;
+
+        border: none;
+        outline: none;
+
+        border-radius: 2em;
+        border: 1px solid $clr-d-red;
+        padding-left: 2em;
+        &::placeholder {
+            color: $clr-d-red;
+            opacity: 75%;
+        }
+    }
+    div {
+        background: $grad-pink;
+
+        border-radius: 2em;
+
+        position: absolute;
+        right: 0px;
+
+        height: 100%;
+        width: 65px;
+
+        display: grid;
+        place-items: center;
+    }
+}
