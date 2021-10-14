@@ -27,7 +27,7 @@ Your users should be able to:
 - [x] See hover states for all interactive elements on the page
 - [x] Receive an error message when the form is submitted if:
   - [x] The input field is empty
-  - [ ] The email address is not formatted correctly 
+  - [x] The email address is not formatted correctly 
 
 
 <!-- IMAGE MAY NEED REPLACING -->
